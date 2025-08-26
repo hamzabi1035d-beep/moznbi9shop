@@ -15,7 +15,7 @@ const products = {
   2: {
     title: "ps2",
     price: "249 درهم",
-    desc: "جهاز بلاي ستيشن بحالة جيدة مع 2 يد تحكم. معه ميموار usb 16 gb القيادة و 2 كاسيت",
+    desc: "جهاز بلاي ستيشن بحالة جيدة مع 2 يد تحكم. معه ميموار usb 16 gb ",
     images: [
       "ps2/m1.jpg",
       "ps2/m2.jpg",
@@ -54,3 +54,4 @@ document.getElementById("orderForm")?.addEventListener("submit", function(e){
   const msg = `طلب جديد:\nالمنتج: ${products[id].title}\nالاسم: ${name}\nالهاتف: ${phone}\nالعنوان: ${address}`;
   window.open(`https://wa.me/212615435474?text=${encodeURIComponent(msg)}`, "_blank");
 });
+
