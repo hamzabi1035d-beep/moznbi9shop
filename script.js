@@ -1,8 +1,8 @@
 const products = {
   1: {
-    title: "بلاي ستيشن 4",
-    price: "3000 درهم",
-    desc: "جهاز بلاي ستيشن 4 بحالة جيدة مع يد تحكم.",
+    title: "Wii console",
+    price: "249 درهم",
+    desc: "جهاز ويي بحالة جيدة مع يد تحكم. معه شاحن وعجلة القيادة و 2 كاسيت",
     images: [
       "wii/wii1.jpg",
       "wii/m2.jpg",
@@ -13,9 +13,9 @@ const products = {
     ]
   },
   2: {
-    title: "لابتوب ديل",
-    price: "4500 درهم",
-    desc: "حاسوب محمول ديل i7، SSD 512GB، رام 16GB.",
+    title: "ps2",
+    price: "249 درهم",
+    desc: "جهاز بلاي ستيشن بحالة جيدة مع 2 يد تحكم. معه ميموار usb 16 gb القيادة و 2 كاسيت",
     images: [
       "ps2/m1.jpg",
       "ps2/m2.jpg",
@@ -52,5 +52,5 @@ document.getElementById("orderForm")?.addEventListener("submit", function(e){
 
   // يفتح واتساب مع الرسالة
   const msg = `طلب جديد:\nالمنتج: ${products[id].title}\nالاسم: ${name}\nالهاتف: ${phone}\nالعنوان: ${address}`;
-  window.open(`https://wa.me/212600000000?text=${encodeURIComponent(msg)}`, "_blank");
+  window.open(`https://wa.me/212615435474?text=${encodeURIComponent(msg)}`, "_blank");
 });
