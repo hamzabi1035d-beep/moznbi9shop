@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجري</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f6fa;
+      color: #2c3e50;
+      direction: rtl;
+    }
+    header {
+      background: linear-gradient(135deg, #27ae60, #2ecc71);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    nav {
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #2ecc71;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 2rem;
+    }
+    .product {
+      background: white;
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .product h3 {
+      margin: 0.8rem 0 0.4rem;
+      font-size: 1.2rem;
+      color: #34495e;
+    }
+    .price {
+      color: #e74c3c;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #219150;
+    }
+    .product-details, .order-form {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .product-details img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background: #27ae60;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #219150;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>متجري</header>
+
+  <nav>
+    <a href="#products">المنتجات</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+
+  <!-- المنتجات -->
+  <section id="products" class="products">
+
+
+
+
+    <!-- منتوج 1 -->
+    <div class="product">
+      <img src="wii/wii1.jpg" alt="WII console">
+      <h3> Wii Console</h3>
+      <p class="price">249 درهم</p>
+      <a class="btn" href="product.html?id=1">عرض التفاصيل</a>
+    </div>
+
+    <!-- منتوج 2 -->
+    <div class="product">
+      <img src="ps2\m1.jpg" alt="WII console">
+      <h3>لابتوب ديل</h3>
+      <p class="price">4500 درهم</p>
+      <a class="btn" href="product.html?id=2">عرض التفاصيل</a>
+    </div>
+
+        <!-- منتوج 2 -->
+    <div class="product">
+      <img src="https://via.placeholder.com/400x250" alt="لابتوب">
+      <h3>لابتوب ديل</h3>
+      <p class="price">4500 درهم</p>
+      <a class="btn" href="product.html?id=2">عرض التفاصيل</a>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- اتصل بنا -->
+  <section id="contact" style="padding:2rem; text-align:center;">
+    <h2>📞 اتصل بنا</h2>
+    <p>الهاتف: 0600-00-00-00</p>
+    <p>واتساب: <a class="btn" href="https://wa.me/212600000000" target="_blank">راسلنا</a></p>
+  </section>
+
+  <footer>
+    جميع الحقوق محفوظة © 2025
+  </footer>
+
+</body>
+</html>
