@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر البلياردو</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f0a500;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .product .price {
+            font-weight: bold;
+            margin: 10px 0;
+            color: #222;
+        }
+
+        .product a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .product a:hover {
+            background-color: #128C7E;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biliardo shop</h1>
+    </header>
+
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#">المنتجات</a>
+        <a href="#">اتصل بنا</a>
+        <a href="#">حول</a>
+    </nav>
+
+    <section class="products">
+        <div class="product">
+            <img src="beliard/kora.jpg" alt="كرة بلياردو">
+            <h3>كرة بلياردو</h3>
+            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p class="price">السعر: 250 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري كرة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="beliard/tapi.jpg" alt="طابيا">
+            <h3>طابيا</h3>
+            <p>مصنوع من خشب ممتاز لراحة اللعب.</p>
+            <p class="price">السعر: 230 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري مضرب البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="beliard/gol.jpg" alt="لكوان">
+            <h3>6 لكوان</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 100 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+        
+        <div class="product">
+            <img src="beliard/alba.jpg" alt="سكا بلياردو">
+            <h3>6 سكا بلياردو</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 110 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+
+        <div class="product">
+            <img src="beliard/tabaxir.jpg" alt="طاباشير">
+            <h3>طاباشير</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 30 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>     
+        </div>
+
+        <div class="product">
+            <img src="beliard/boxon.jpg" alt="ريوص لكان">
+            <h3>ريوص لكان</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 80 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="beliard/lakan.jpg" alt="لكان">
+            <h3>لكان</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 100 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+
+        <div class="product">
+            <img src="beliard/rosol.jpg" alt="روسول">
+            <h3>روسول</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 8 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="beliard/tiran.jpg" alt="تيران">
+            <h3>تيران</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 50 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="beliard/korabl.jpg" alt="كرة بابي فوت">
+            <h3>كرة بابي فوت</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 5 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="beliard/rosolbl.jpg" alt="روسول بابي فوت">
+            <h3>روسول بابي فوت</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 7 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="beliard/zawya.jpg" alt=" كوان بابي فوت">
+            <h3> 4 كوان بابي فوت</h3>
+            <p>طاولة متينة مع سطح أملس للعب احترافي.</p>
+            <p class="price">السعر: 200 درهم</p>
+            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاولة البلياردو" target="_blank">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+
+
+
+
+
+    </section>
+
+    <footer>
+        &copy; 2025 متجر البلياردو. جميع الحقوق محفوظة.
+    </footer>
+</body>
+</html>
