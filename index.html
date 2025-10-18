@@ -1,281 +1,194 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر البلياردو</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>متجر البلياردو | Billiardo Shop</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body { font-family: 'Tajawal', Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0; }
+header { background-color: #111; color: white; text-align: center; padding: 25px 0; font-size: 26px; }
+nav { background-color: #333; text-align: center; padding: 10px 0; }
+nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
+nav a:hover { color: #f0a500; }
 
-        header {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
+.products { background-color: #fff; border-radius: 10px; margin: 30px auto; padding: 20px; max-width: 1300px; display: flex; flex-wrap: wrap; justify-content: center; }
+.product { background-color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin: 15px; width: 250px; text-align: center; padding: 15px; transition: transform 0.3s, box-shadow 0.3s; }
+.product:hover { transform: scale(1.05); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+.product img { width: 200px; height: 200px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; }
+.product img:hover { transform: scale(1.1); }
+.product h3 { margin: 10px 0; color: #111; }
+.product p { color: #555; margin: 5px 0; }
+.product .price { font-weight: bold; margin: 10px 0; color: #d35400; }
+.product button { display: inline-block; margin-top: 10px; padding: 10px 18px; background-color: #25D366; color: white; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; transition: background-color 0.3s; }
+.product button:hover { background-color: #128C7E; }
 
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
+h2.group-title { text-align: center; margin-top: 40px; color: #222; }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+form { background: #fff; padding: 25px; margin: 30px auto; border-radius: 12px; max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+form h2 { margin-bottom: 15px; }
+form input, form textarea { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; margin: 6px 0; }
+form button { padding: 10px 20px; background: #0078ff; color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; }
+form button:hover { background: #0056cc; }
 
-        nav a:hover {
-            color: #f0a500;
-        }
-
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-
-        .product {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 15px;
-            width: 250px;
-            text-align: center;
-            padding: 15px;
-            transition: transform 0.2s;
-        }
-
-        .product:hover {
-            transform: scale(1.05);
-        }
-
-        .product img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .product h3 {
-            margin: 10px 0;
-        }
-
-        .product p {
-            color: #555;
-        }
-
-        .product .price {
-            font-weight: bold;
-            margin: 10px 0;
-            color: #222;
-        }
-
-        .product a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.2s;
-        }
-
-        .product a:hover {
-            background-color: #128C7E;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
-        }
-    </style>
+footer { background-color: #111; color: white; text-align: center; padding: 20px 10px; font-size: 14px; margin-top: 40px; }
+footer a { color: #25D366; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Biliardo shop</h1>
-    </header>
 
-    <nav>
-        <a href="#">الرئيسية</a>
-        <a href="#">المنتجات</a>
-        <a href="#">اتصل بنا</a>
-        <a href="#">حول</a>
-    </nav>
+<header>🟢 متجر البلياردو | Billiardo Shop</header>
 
-    <section class="products">
-        <div class="product">
-            <img src="beliard/kora.jpg" alt="كرة بلياردو">
-            <h3>كرة بلياردو</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
-            <p class="price">السعر: 250 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري كرة البلياردو" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
-        </div>
+<nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">المنتجات</a>
+    <a href="#">اتصل بنا</a>
+    <a href="#">حول</a>
+</nav>
 
-        
-        <div class="product">
-            <img src="beliard/tapiry.jpg" alt="طابيا رويال">
-            <h3>طابيا رويال</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
-            <p class="price">السعر: 350 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طابيا رويال" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
-        </div>
-              
+<h2 class="group-title">بيلياردو</h2>
+<section class="products">
+    <div class="product">
+        <img src="beliard/kora.jpg" alt="كرة بلياردو">
+        <h3>كرة بلياردو</h3>
+        <p>جودة عالية ومناسبة لجميع المستويات.</p>
+        <p class="price">السعر: 250 درهم</p>
+        <button type="button" onclick="addToCart('كرة بلياردو')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
+    </div>
 
-        <div class="product">
-            <img src="beliard/tapi.jpg" alt="طابيا">
-            <h3>طابيا</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
-            <p class="price">السعر: 250 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طابياو" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
-        </div>
+    <div class="product">
+        <img src="beliard/tapiry.jpg" alt="طابيا رويال">
+        <h3>طابيا رويال</h3>
+        <p>جودة ممتازة لجميع المستويات.</p>
+        <p class="price">السعر: 350 درهم</p>
+        <button type="button" onclick="addToCart('طابيا رويال')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
+    </div>
+
+    <div class="product">
+       <img src="beliard/tapi.jpg" alt="طابيا">
+        <h3>طابيا</h3>
+        <p>مصنوعة بدقة وجودة عالية.</p>
+        <p class="price">السعر: 250 درهم</p>
+        <button type="button" onclick="addToCart('طابيا')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
+   </div>
 
         <div class="product">
             <img src="beliard/gol.jpg" alt="لكوان">
             <h3>6 لكوان</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>لكوان احترافية قوية التحمل.</p>
             <p class="price">السعر: 120 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري لكوان" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('لكوان')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
-        
         <div class="product">
             <img src="beliard/alba.jpg" alt="سكا بلياردو">
             <h3>6 سكا بلياردو</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>عالية الجودة ودقة متناهية.</p>
             <p class="price">السعر: 120 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري سكا بلياردو" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('سكا بلياردو')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
-
 
         <div class="product">
             <img src="beliard/tabaxir.jpg" alt="طاباشير">
             <h3>طاباشير</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>طاباشير احترافي ناعم.</p>
             <p class="price">السعر: 40 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري طاباشير" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>     
+            <button type="button" onclick="addToCart('طاباشير')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
             <img src="beliard/boxon.jpg" alt="ريوص لكان">
             <h3>ريوص لكان</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>تصميم متين ومريح.</p>
             <p class="price">السعر: 90 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري ريوص لكان" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('ريوص لكان')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
             <img src="beliard/lakan.jpg" alt="لكان">
             <h3>لكان</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>مناسب للاعبين المحترفين والهواة.</p>
             <p class="price">السعر: 120 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري لكان" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('لكان')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
-
-
-        <div class="product">
+    <div class="product">
             <img src="beliard/rosol.jpg" alt="روسول">
             <h3>روسول</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>جودة عالية.</p>
             <p class="price">السعر: 8 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري روسول" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('روسول')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
+    </section>
+
+
+     <h2 class="group-title">بابي فوت</h2>
+    <section class="products">
+
 
         <div class="product">
             <img src="beliard/tiran.jpg" alt="تيران">
             <h3>تيران</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>مقاس مثالي واستعمال مريح.</p>
             <p class="price">السعر: 50 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري تيران" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('تيران')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
             <img src="beliard/korabl.jpg" alt="كرة بابي فوت">
             <h3>كرة بابي فوت</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>خفيفة ومتينة.</p>
             <p class="price">السعر: 5 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشريكرة بابي فوت " target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('كرة بابي فوت')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
             <img src="beliard/rosolbl.jpg" alt="روسول بابي فوت">
             <h3>روسول بابي فوت</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>جودة ممتازة.</p>
             <p class="price">السعر: 8 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري روسول بابي فوت" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('روسول بابي فوت')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
-            <img src="beliard/zawya.jpg" alt=" كوان بابي فوت">
-            <h3> 4 كوان بابي فوت</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <img src="beliard/zawya.jpg" alt="كوان بابي فوت">
+            <h3>4 كوان بابي فوت</h3>
+            <p>مصنوعة من مواد قوية.</p>
             <p class="price">السعر: 200 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري كوان بابي فوت" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('كوان بابي فوت')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
-
 
         <div class="product">
             <img src="beliard/ktban.jpg" alt="قطبان">
             <h3>قطبان</h3>
-            <p>جودة عالية ومناسبة لجميع المستويات.</p>
+            <p>قطبان قوية مقاومة للصدأ.</p>
             <p class="price">السعر: 270 درهم</p>
-            <a href="https://wa.me/212717657640?text=سلام، بغيت نشري قطبان" target="_blank">
-                اطلب الآن عبر واتساب
-            </a>
+            <button type="button" onclick="addToCart('قطبان')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
-
-
-
-
-
     </section>
 
-    <footer>
-        &copy; 2025 متجر البلياردو. جميع الحقوق محفوظة.
-    </footer>
-</body>
-</html>
 
 
+    <!-- كرر باقي المنتجات بنفس الطريقة -->
+</section>
 
+<h2 class="group-title">📝 إرسال المعلومات</h2>
+<form action="https://formspree.io/f/xyznvgze" method="POST" style="text-align:right; direction:rtl;">
+    <label style="font-weight:bold;">المنتجات المختارة:</label>
+    <textarea id="cart" name="products" readonly placeholder="اضغط على زر 'أضف إلى السلة' لإضافة المنتجات هنا..." 
+              style="height:80px; text-align:right;"></textarea>
 
+    <label style="font-weight:bold;">الاسم:</label>
+    <input type="text" name="first_name" required placeholder="اكتب الاسم" style="text-align:right;">
 
+    <label style="font-weight:bold;">الاسم العائلي:</label>
+    <input type="text" name="last_name" required placeholder="اكتب الاسم العائلي" style="text-align:right;">
+
+    <label style="font-weight:bold;">📱 رقم الهاتف :</label>
+    <input type="text" name="info" required placeholder="اكتب رقمك" style="text-align:right;">
+
+    <label style="font-weight:bold;">الموقع:</label>
+    <input type="text" name="location" placeholder="مثلاً: أكادير أو رابط موقعك" style="text-align:right;">
+
+    <button type="submit">إرسال</button>
+</form>
