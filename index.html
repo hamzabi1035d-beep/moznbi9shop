@@ -4,36 +4,133 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>متجر البلياردو | Billiardo Shop</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-body { font-family: 'Tajawal', Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0; }
-header { background-color: #111; color: white; text-align: center; padding: 25px 0; font-size: 26px; }
-nav { background-color: #333; text-align: center; padding: 10px 0; }
-nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
-nav a:hover { color: #f0a500; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+    background: url('https://apandesgames.com.au/wp-content/uploads/2025/08/Cue-Sports.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
 
-.products { background-color: #fff; border-radius: 10px; margin: 30px auto; padding: 20px; max-width: 1300px; display: flex; flex-wrap: wrap; justify-content: center; }
-.product { background-color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin: 15px; width: 250px; text-align: center; padding: 15px; transition: transform 0.3s, box-shadow 0.3s; }
-.product:hover { transform: scale(1.05); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
-.product img { width: 200px; height: 200px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; }
-.product img:hover { transform: scale(1.1); }
-.product h3 { margin: 10px 0; color: #111; }
-.product p { color: #555; margin: 5px 0; }
-.product .price { font-weight: bold; margin: 10px 0; color: #d35400; }
-.product button { display: inline-block; margin-top: 10px; padding: 10px 18px; background-color: #25D366; color: white; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; transition: background-color 0.3s; }
-.product button:hover { background-color: #128C7E; }
+/* هيدر ستايل جيمينغ */
+header {
+    background: rgba(0,0,0,0.7);
+    color: rgb(21, 255, 0);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 30px;
+    text-shadow: 0 0 15px rgb(0, 255, 0);
+    border-bottom: 2px solid rgb(0, 255, 0);
+}
 
-h2.group-title { text-align: center; margin-top: 40px; color: #222; }
+/* نافبار نيون */
+nav {
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: rgb(0, 255, 0);
+    text-shadow: 0 0 10px rgb(0, 255, 0);
+}
 
-form { background: #fff; padding: 25px; margin: 30px auto; border-radius: 12px; max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-form h2 { margin-bottom: 15px; }
-form input, form textarea { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; margin: 6px 0; }
-form button { padding: 10px 20px; background: #0078ff; color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; }
-form button:hover { background: #0056cc; }
+/* المنتجات */
+.products {
+    background: rgba(0,0,0,0.55);
+    border-radius: 15px;
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-footer { background-color: #111; color: white; text-align: center; padding: 20px 10px; font-size: 14px; margin-top: 40px; }
-footer a { color: #25D366; text-decoration: none; }
-footer a:hover { text-decoration: underline; }
+.product {
+    background: rgba(20,20,20,0.85);
+    border-radius: 15px;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,255,255,0.1);
+    transition: 0.3s;
+}
+.product:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 20px rgb(0, 255, 0);
+}
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product h3 {
+    color: rgb(0, 255, 0);
+    margin-top: 10px;
+}
+.product p { color: #ddd; }
+.price { color: #ff0080; font-weight: bold; }
+
+/* زر الواتساب */
+.product button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #25D366;
+}
+.product button:hover {
+    background: #128C7E;
+}
+
+/* الفوتر */
+footer {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 2px solid rgb(0, 255, 0);
+}
+footer a {
+    color: rgb(0, 255, 0);
+}
+
+/* CSS القديم ديالك هنا */
+
+/* ✅ تحسين المظهر في الهاتف */
+@media (max-width: 600px) {
+    header { font-size: 22px; padding: 18px 0; }
+    nav a { margin: 0 8px; font-size: 14px; }
+    .products { padding: 10px; }
+    .product { width: 45%; margin: 7px; padding: 10px; }
+    .product img { width: 100%; height: auto; }
+    .product h3 { font-size: 15px; }
+    .price { font-size: 14px; }
+}
+
+@media (max-width: 400px) {
+    .product { width: 90%; }
+    nav a { display: inline-block; padding: 5px 0; }
+}
+
 </style>
 </head>
 <body>
@@ -54,7 +151,6 @@ footer a:hover { text-decoration: underline; }
         <h3>كرة بلياردو</h3>
         <p>جودة عالية ومناسبة لجميع المستويات.</p>
         <p class="price">السعر: 250 درهم</p>
-        <button type="button" onclick="addToCart('كرة بلياردو')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
     </div>
 
     <div class="product">
@@ -62,7 +158,6 @@ footer a:hover { text-decoration: underline; }
         <h3>طابيا رويال</h3>
         <p>جودة ممتازة لجميع المستويات.</p>
         <p class="price">السعر: 350 درهم</p>
-        <button type="button" onclick="addToCart('طابيا رويال')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
     </div>
 
     <div class="product">
@@ -70,55 +165,57 @@ footer a:hover { text-decoration: underline; }
         <h3>طابيا</h3>
         <p>مصنوعة بدقة وجودة عالية.</p>
         <p class="price">السعر: 250 درهم</p>
-        <button type="button" onclick="addToCart('طابيا')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
    </div>
+    
+   <div class="product">
+        <img src="beliard/gol.jpg" alt="لكوان">
+        <h3>6 لكوان</h3>
+        <p>لكوان احترافية قوية التحمل.</p>
+        <p class="price">السعر: 120 درهم</p>
+    </div>
 
-        <div class="product">
-            <img src="beliard/gol.jpg" alt="لكوان">
-            <h3>6 لكوان</h3>
-            <p>لكوان احترافية قوية التحمل.</p>
-            <p class="price">السعر: 120 درهم</p>
-            <button type="button" onclick="addToCart('لكوان')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
-        </div>
-
-        <div class="product">
-            <img src="beliard/alba.jpg" alt="سكا بلياردو">
-            <h3>6 سكا بلياردو</h3>
-            <p>عالية الجودة ودقة متناهية.</p>
-            <p class="price">السعر: 120 درهم</p>
-            <button type="button" onclick="addToCart('سكا بلياردو')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
-        </div>
-
-        <div class="product">
-            <img src="beliard/tabaxir.jpg" alt="طاباشير">
-            <h3>طاباشير</h3>
-            <p>طاباشير احترافي ناعم.</p>
-            <p class="price">السعر: 40 درهم</p>
-            <button type="button" onclick="addToCart('طاباشير')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
-        </div>
-
-        <div class="product">
-            <img src="beliard/boxon.jpg" alt="ريوص لكان">
-            <h3>ريوص لكان</h3>
-            <p>تصميم متين ومريح.</p>
-            <p class="price">السعر: 90 درهم</p>
-            <button type="button" onclick="addToCart('ريوص لكان')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
-        </div>
-
-        <div class="product">
-            <img src="beliard/lakan.jpg" alt="لكان">
-            <h3>لكان</h3>
-            <p>مناسب للاعبين المحترفين والهواة.</p>
-            <p class="price">السعر: 120 درهم</p>
-            <button type="button" onclick="addToCart('لكان')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
-        </div>
     <div class="product">
-            <img src="beliard/rosol.jpg" alt="روسول">
-            <h3>روسول</h3>
-            <p>جودة عالية.</p>
-            <p class="price">السعر: 8 درهم</p>
-            <button type="button" onclick="addToCart('روسول')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
-        </div>
+        <img src="beliard/alba.jpg" alt="سكا بلياردو">
+        <h3>6 سكا بلياردو</h3>
+        <p>عالية الجودة ودقة متناهية.</p>
+        <p class="price">السعر: 120 درهم</p>
+    </div>
+
+    <div class="product">
+        <img src="beliard/tabaxir.jpg" alt="طاباشير">
+        <h3>طاباشير</h3>
+        <p>طاباشير احترافي ناعم.</p>
+        <p class="price">السعر: 40 درهم</p>
+     </div>
+
+    <div class="product">
+        <img src="beliard/boxon.jpg" alt="ريوص لكان">
+        <h3>ريوص لكان</h3>
+        <p>تصميم متين ومريح.</p>
+        <p class="price">السعر: 90 درهم</p>
+    </div>
+
+    <div class="product">
+        <img src="beliard/lakan.jpg" alt="لكان">
+        <h3>لكان</h3>
+        <p>مناسب للاعبين المحترفين والهواة.</p>
+        <p class="price">السعر: 120 درهم</p>
+    </div>
+
+    <div class="product">
+        <img src="beliard/rosol.jpg" alt="روسول">
+        <h3>روسول</h3>
+        <p>جودة عالية.</p>
+        <p class="price">السعر: 8 درهم</p>
+    </div>
+
+    <div class="product">
+        <img src="beliard/9fl.jpg" alt="قفل">
+        <h3>قفل</h3>
+        <p>ممتاز</p>
+        <p class="price">السعر: 50 درهم</p>
+    </div>
+        
     </section>
 
 
@@ -131,7 +228,6 @@ footer a:hover { text-decoration: underline; }
             <h3>تيران</h3>
             <p>مقاس مثالي واستعمال مريح.</p>
             <p class="price">السعر: 50 درهم</p>
-            <button type="button" onclick="addToCart('تيران')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
@@ -139,7 +235,6 @@ footer a:hover { text-decoration: underline; }
             <h3>كرة بابي فوت</h3>
             <p>خفيفة ومتينة.</p>
             <p class="price">السعر: 5 درهم</p>
-            <button type="button" onclick="addToCart('كرة بابي فوت')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
@@ -147,7 +242,6 @@ footer a:hover { text-decoration: underline; }
             <h3>روسول بابي فوت</h3>
             <p>جودة ممتازة.</p>
             <p class="price">السعر: 8 درهم</p>
-            <button type="button" onclick="addToCart('روسول بابي فوت')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
@@ -155,7 +249,6 @@ footer a:hover { text-decoration: underline; }
             <h3>4 كوان بابي فوت</h3>
             <p>مصنوعة من مواد قوية.</p>
             <p class="price">السعر: 200 درهم</p>
-            <button type="button" onclick="addToCart('كوان بابي فوت')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
 
         <div class="product">
@@ -163,32 +256,5 @@ footer a:hover { text-decoration: underline; }
             <h3>قطبان</h3>
             <p>قطبان قوية مقاومة للصدأ.</p>
             <p class="price">السعر: 270 درهم</p>
-            <button type="button" onclick="addToCart('قطبان')"><i class="fas fa-cart-plus"></i> أضف إلى السلة</button>
         </div>
     </section>
-
-
-
-    <!-- كرر باقي المنتجات بنفس الطريقة -->
-</section>
-
-<h2 class="group-title">📝 إرسال المعلومات</h2>
-<form action="https://formspree.io/f/xyznvgze" method="POST" style="text-align:right; direction:rtl;">
-    <label style="font-weight:bold;">المنتجات المختارة:</label>
-    <textarea id="cart" name="products" readonly placeholder="اضغط على زر 'أضف إلى السلة' لإضافة المنتجات هنا..." 
-              style="height:80px; text-align:right;"></textarea>
-
-    <label style="font-weight:bold;">الاسم:</label>
-    <input type="text" name="first_name" required placeholder="اكتب الاسم" style="text-align:right;">
-
-    <label style="font-weight:bold;">الاسم العائلي:</label>
-    <input type="text" name="last_name" required placeholder="اكتب الاسم العائلي" style="text-align:right;">
-
-    <label style="font-weight:bold;">📱 رقم الهاتف :</label>
-    <input type="text" name="info" required placeholder="اكتب رقمك" style="text-align:right;">
-
-    <label style="font-weight:bold;">الموقع:</label>
-    <input type="text" name="location" placeholder="مثلاً: أكادير أو رابط موقعك" style="text-align:right;">
-
-    <button type="submit">إرسال</button>
-</form>
