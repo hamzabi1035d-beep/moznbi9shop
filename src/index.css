@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+
+@theme {
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-orange: #ff6b00;
+  --color-brand-dark: #1a1a1a;
+}
+
+body {
+  direction: rtl;
+  @apply bg-white text-brand-dark;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
